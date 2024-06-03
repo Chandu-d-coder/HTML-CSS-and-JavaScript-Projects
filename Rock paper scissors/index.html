@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game | HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Game title -->
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- Game choices -->
+    <div class="choices">
+      <div class="choice" id="rock">
+        <!-- Rock choice -->
+        <img src="img/rock.png" alt="rock" />
+        <!-- Rock image -->
+      </div>
+      <div class="choice" id="paper">
+        <!-- Paper choice -->
+        <img src="img/paper.png" alt="paper" />
+        <!-- Paper image -->
+      </div>
+      <div class="choice" id="scissors">
+        <!-- Scissors choice -->
+        <img src="img/scissors.png" alt="scissors" />
+        <!-- Scissors image -->
+      </div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user">Your score : <span id="userScoreMsg">0</span></p>
+        <!-- User's score -->
+      </div>
+      <div class="score">
+        <p id="computer">Computer score : <span id="compScoreMsg"> 0</span></p>
+        <!-- Computer's score -->
+      </div>
+    </div>
+
+    <!-- Message containers -->
+    <p id="compChoiceMsg" class="hide">Computer Choice</p>
+    <!-- Computer's choice message -->
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+      <!-- Game message -->
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+    <!-- Link to external JavaScript file -->
+  </body>
+</html>

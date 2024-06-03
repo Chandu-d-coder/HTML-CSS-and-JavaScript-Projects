@@ -1,0 +1,90 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family to Poppins and center text alignment globally */
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Styling for headings */
+h1 {
+  height: 5rem; /* Set height for consistent vertical alignment */
+  line-height: 5rem; /* Center text vertically */
+  margin-bottom: 25px; /* Add spacing below heading */
+}
+
+/* Container for game choices */
+.choices {
+  display: flex; /* Display choices horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styling for each individual choice */
+.choice {
+  height: 250px; /* Set height for each choice */
+  width: 220px; /* Set width for each choice */
+}
+
+/* Styling for choice images */
+img {
+  height: 200px; /* Set height for image */
+  width: 200px; /* Set width for image */
+  object-fit: cover; /* Scale image while preserving aspect ratio */
+  opacity: 0.88; /* Set default opacity for image */
+}
+
+/* Increase opacity and show pointer on image hover */
+img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Styling for score board */
+.score-board {
+  gap: 35px; /* Add space between score elements */
+  margin-top: 15px; /* Add spacing above score board */
+  margin-bottom: 25px; /* Add spacing below score board */
+  font-size: 1.8rem; /* Set font size for score board */
+}
+
+/* Styling for user and computer score labels */
+#user,
+#computer {
+  font-weight: 600; /* Set font weight for score labels */
+}
+
+/* Styling for span elements */
+span {
+  color: #111010af; /* Set color for span elements */
+}
+
+/* Styling for message container */
+#msg {
+  padding: 25px; /* Add padding around message */
+  margin: auto 480px; /* Center message horizontally with margin */
+  font-size: 1.8rem; /* Set font size for message */
+  font-weight: 600; /* Set font weight for message */
+  border-radius: 10px; /* Add rounded corners to message */
+  background-color: #00ff008b; /* Set background color for message */
+}
+
+/* Styling for computer choice message */
+#compChoiceMsg {
+  font-size: 25px; /* Set font size for computer choice message */
+  margin-bottom: 20px; /* Add spacing below computer choice message */
+  font-weight: 600; /* Set font weight for computer choice message */
+}
+
+/* Hide elements with 'hide' class */
+.hide {
+  visibility: hidden; /* Hide elements without removing them from layout */
+}
