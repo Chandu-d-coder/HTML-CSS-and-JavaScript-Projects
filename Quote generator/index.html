@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define character set and viewport for better rendering -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title of the document -->
+    <title>Quote Generator - HTML | CSS | JS</title>
+    <!-- Link external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Container for the quote generator -->
+    <div class="quote-box">
+      <!-- Heading for the quote -->
+      <h1>Quote of the day</h1>
+      <!-- Paragraph to display the random quote -->
+      <p id="random-quote">Loading...</p>
+      <!-- Span to display the author of the quote -->
+      <span id="author">Loading...</span>
+      <!-- Buttons for generating a new quote and sharing on Twitter -->
+      <div class="buttons">
+        <button id="new-quote-btn">New Quote</button>
+        <button id="tweet-btn">Tweet it on <i class="fa-brands fa-x-twitter"></i></button>
+      </div>
+    </div>
+    <!-- Include JavaScript file for generating quotes -->
+    <script src="script.js"></script>
+  </body>
+</html>

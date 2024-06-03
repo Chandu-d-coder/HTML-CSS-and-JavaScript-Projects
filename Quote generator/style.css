@@ -1,0 +1,116 @@
+/* 
+  Importing Google Fonts for various font families 
+  to be used throughout the document
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fragment+Mono:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Martian+Mono:wght@100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Resetting default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif; /* Default font family for the document */
+}
+
+/* Styling the body to center its contents and set a gradient background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+/* Styling for the quote box container */
+.quote-box {
+  width: 700px;
+  text-align: center;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/* Styling for the main heading */
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  position: relative;
+  font-weight: 600;
+}
+
+/* Styling for the decorative line under the main heading */
+h1::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: blue;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+/* Styling for the random quote text */
+#random-quote {
+  margin: 35px auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Styling for the quotation marks before and after the quote */
+#random-quote::after,
+#random-quote::before {
+  content: '"';
+  font-weight: 600;
+}
+
+/* Styling for the author of the quote */
+#author {
+  margin-bottom: 15px;
+  float: right;
+  position: relative;
+  font-style: italic;
+}
+
+/* Styling for the decorative line next to the author */
+#author::after {
+  content: "";
+  height: 1px;
+  width: 25px;
+  border-radius: 10px;
+  background-color: blue;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  left: -20px;
+}
+
+/* Styling for the buttons container */
+.buttons {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Styling for the buttons */
+button {
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  margin-right: 15px;
+  background-color: #1414d5ee;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+/* Styling for the Twitter icon within buttons */
+.buttons .fa-x-twitter {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Styling for button click effect */
+button:active {
+  transform: scale(0.98);
+}
