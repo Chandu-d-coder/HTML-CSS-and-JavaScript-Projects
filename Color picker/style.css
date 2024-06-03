@@ -1,0 +1,96 @@
+/* Import Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif; /* Apply Poppins font */
+}
+
+/* Container styles */
+.container {
+  border: 2px solid red; /* Border style */
+  height: 50vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #706e6e0b; /* Background color with transparency */
+  box-shadow: 0 8px 32px 0 #090a185e; /* Box shadow */
+  backdrop-filter: blur(13.5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(13.5px); /* Blur effect for Safari */
+  border-radius: 30px; /* Border radius */
+  border: 1px solid #ffffff2e; /* Border color with transparency */
+}
+
+/* Color pallet styles */
+.color-pallets {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Button styles */
+button {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Color-specific button styles */
+.violet {
+  background-color: #ff00ff;
+}
+.blue {
+  background-color: #0000ffda;
+}
+.green {
+  background-color: #2fff00;
+}
+.reset {
+  border: 4px solid #80808047;
+  color: gray;
+}
+.red {
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+  box-shadow: 0 5px 15px #f2616766;
+}
+
+/* Button hover effects */
+.violet:hover,
+.blue:hover,
+.green:hover,
+.red:hover,
+.random:hover,
+.reset:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+/* Button active effect */
+.btn:active {
+  transform: translateY(4px);
+}
