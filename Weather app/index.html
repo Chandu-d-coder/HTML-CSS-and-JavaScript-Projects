@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the document -->
+    <title>Weather app - HTML | CSS | JS</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to Font Awesome stylesheet for icons -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Weather card container -->
+    <div class="card">
+      <!-- Search input and button -->
+      <div class="search">
+        <input type="text" id="search-box" placeholder="Enter city name" spellcheck="false" />
+        <button id="search-btn">
+          <!-- Search icon -->
+          <i class="fa-solid fa-magnifying-glass" style="color: #000000bc"></i>
+        </button>
+      </div>
+
+      <!-- Weather details -->
+      <div class="weather hide" id="weather">
+        <!-- Weather icon -->
+        <img id="weather-icon" src="images/clear.png" alt="clear" />
+        <!-- Temperature -->
+        <h1 id="temp" style="font-size: 55px">22°c</h1>
+        <!-- City name -->
+        <h1 id="city">New York</h1>
+      </div>
+
+      <!-- Additional weather information -->
+      <div class="temp-situation hide" id="temp-sitiation">
+        <!-- Humidity -->
+        <div class="humidity">
+          <img src="images/humidity.png" alt="humidity" height="35px" />
+          <div class="details">
+            <!-- Humidity value -->
+            <h2 id="humidity">50%</h2>
+            <!-- Humidity label -->
+            <span>Humidity</span>
+          </div>
+        </div>
+        <!-- Wind speed -->
+        <div class="wind-speed">
+          <img src="images/wind.png" alt="wind" height="40px" />
+          <div class="details">
+            <!-- Wind speed value -->
+            <h2 id="wind">5.5</h2>
+            <!-- Wind speed label -->
+            <span>Wind speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script for fetching and displaying weather data -->
+    <script src="script.js"></script>
+  </body>
+</html>
